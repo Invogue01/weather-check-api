@@ -4,7 +4,7 @@
 
 ```
 AS YOU travel often
-YOU WANT to see the weather outlook 
+YOU WANT to see current weather
 SO THAT YOU can plan a trip accordingly
 ```
 
@@ -17,5 +17,5 @@ CLICK submit
 
 The following image shows the web application's appearance and functionality:
 
-![Website image]()
+![Website image](https://invogue01.github.io/weather-check-api/)
 

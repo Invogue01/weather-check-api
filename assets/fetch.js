@@ -11,3 +11,4 @@ class Fetch {
     return data;
   }
 }
+
