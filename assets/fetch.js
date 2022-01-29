@@ -4,10 +4,16 @@ class Fetch {
 
         //make request to website
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${weatherKey}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${weatherKey}&units=metric`
+           
+            
         );
         const data= await response.json();
         console.log(data);
         return data;
-    }
+ 
+    } 
+   
 }
+
+

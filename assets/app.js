@@ -1,6 +1,7 @@
 const ft = new Fetch();
 const ui = new UI();
 
+
 //add event listeners//
 
 const search = document.getElementById("searchUser");
@@ -11,10 +12,11 @@ button.addEventListener("click", () => {
   ft.getCurrent(currentVal).then((data) => {
     //call a UI method//
     ui.populateUI(data);
-    //call saveToLS
+    //call save local storage
     ui.saveToLS(data);
   });
 });
+
 
 //event listener for local storage
 
