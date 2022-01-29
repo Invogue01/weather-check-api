@@ -1,7 +1,6 @@
 const ft = new Fetch();
 const ui = new UI();
 
-
 //add event listeners//
 
 const search = document.getElementById("searchUser");
@@ -16,7 +15,6 @@ button.addEventListener("click", () => {
     ui.saveToLS(data);
   });
 });
-
 
 //event listener for local storage
 
