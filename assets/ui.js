@@ -7,7 +7,7 @@ class UI {
 
   populateUI(data) {
     //de-structure vars
-
+    //ui design using bootstrap
     //add them to inner HTML
 
     this.uiContainer.innerHTML = `
