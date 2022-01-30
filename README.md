@@ -19,5 +19,5 @@ CLICK submit
 
 The following image shows the web application's appearance and functionality:
 
-![Website image]()
+![Website image](/assets/wca.png)
 
