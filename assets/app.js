@@ -1,5 +1,6 @@
 const ft = new Fetch();
 const ui = new UI();
+const forc = new Forcast();
 
 
 //add event listeners//
@@ -13,7 +14,20 @@ button.addEventListener("click", () => {
     //call a UI method//
     ui.populateUI(data);
     //call save local storage
-    ui.saveToLS(data);
+    ui.saveToLS(currentVal);
+    ui.getFromLS(currentVal);
+    // fetching 5 day forecast and rendering cards for each
+    forc.getCurrent(data.coord.lat, data.coord.lon)
+    .then (data => {
+      for (let index = 1; index < data.daily.length -2; index++) {
+        
+        ui.populateForecast(data.daily[index])
+      }
+
+  
+
+    })
+
   });
 });
 
